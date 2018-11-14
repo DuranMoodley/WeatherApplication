@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".WeatherForecastScreen"
+    android:id="@+id/mainBackground"
+    android:visibility="invisible"
+    tools:showIn="">
+
+    <RelativeLayout
+        android:id="@+id/topHalf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/forest_sunny"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvCurrWeatherBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCurrWeatherDescription"
+            android:layout_centerHorizontal="true"
+            android:text="25"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+        <TextView
+            android:id="@+id/tvCurrWeatherDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Sunny"
+            android:textColor="@color/white"
+            android:textSize="50sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/middle"
+        android:background="@color/sunny">
+
+        <TextView
+            android:id="@+id/tvCurrWeatherMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="22"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvCurrWeatherMin"
+            android:text="@string/min"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tvCurrWeatherDegree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/curr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current"
+            android:layout_below="@+id/tvCurrWeatherDegree"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvCurrWeatherMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/max"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/tvCurrWeatherMax"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:orientation="horizontal"
+    android:background="@color/white">
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:id="@+id/daysItems"
+        android:background="@color/sunny">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/lstDays">
+        </ListView>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_weather_forecast_screen">Weather Forecast</string>
+    <string name="current">current</string>
+    <string name="min">min</string>
+    <string name="max">max</string>
+    <string name="view_the_current_and_a_5_day_weather_forecast_for_your_area">view the current and a 5 day weather forecast for your area</string>
+    <string name="your_weather_forecast">Your Weather Forecast</string>
+</resources>
